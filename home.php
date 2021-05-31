@@ -84,6 +84,11 @@ include 'checkLogin.php';
 		<ul class="nav">
 		<li><a href="home.php"><img src="imagens/KANAKO.png"></a></li>
 		<li><a href="#"><b><h4>Sobre nós</h4></a></b></li>
+        <?php
+if($_SESSION['profile']==='1'){
+     echo "<li><a href='viewlogs.php'><b><h4>Log</h4></a></b></li>";
+}
+?>       
 		<li style="float: right" onclick="confirmar()"><a href="logout.php" style="padding: 0.5rem 2.3rem;"><b><h4>Log Out</h4></a></b></li>
 		<li style="float:right"><a href="carrinho.php"><i class="fa fa-shopping-cart fa-lg" style="padding: 1.95rem 2.3rem;"></i><b></a></b></li>
 		<!--<?php
