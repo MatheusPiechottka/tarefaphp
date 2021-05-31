@@ -1,0 +1,51 @@
+Create table Adm(
+    Idadm int PRIMARY KEY AUTO_INCREMENT,
+	adm_user varchar(5)
+);
+
+Create table Users(
+    Iduser int PRIMARY KEY AUTO_INCREMENT,
+	Nome varchar(50) not null,
+	Username varchar(50) not null,
+	Senha varchar(100) not null,
+	Email varchar(80) not null,
+	fk_adm_Idadm int not null,
+	foreign key(fk_adm_Idadm) references adm(Idadm),
+	Img varchar(50)
+);
+
+Create table Produtos(
+    IdProduto int PRIMARY KEY AUTO_INCREMENT,
+	Item varchar(50) not null,
+	Valor varchar(50) not null,
+	Data varchar(100) null,		
+	img varchar(80) not null
+);
+
+Create table Carrinho(
+    IdCompra int PRIMARY KEY AUTO_INCREMENT,
+	fk_user_Iduser int not null,
+	foreign key(fk_user_Iduser) references users(Iduser),
+
+	fk_Produto_IdProduto int not null,
+	foreign key(fk_Produto_IdProduto) references Produtos(Idproduto),
+	Item varchar(50) not null,
+	Valor varchar(10) not null,
+	img varchar(80) not null
+);
+
+Create table Compra(
+    IdCompra int PRIMARY KEY AUTO_INCREMENT,
+	Data datetime not null,
+	Total varchar(10) not null
+);
+
+Create table Compra_produto(
+    	Id int PRIMARY KEY AUTO_INCREMENT,
+	fk_Produto_IdProduto int not null,
+	foreign key(fk_Produto_IdProduto) references Produtos(Idproduto),
+
+	fk_User_Iduser int not null,
+	foreign key(fk_User_Iduser) references users(Iduser),
+	Qtd_Produto int not null
+);

@@ -1,0 +1,440 @@
+*{
+	font-family: Arial;
+}
+
+p{
+	padding: 0rem 2rem;
+}
+
+body{
+	padding: 0rem 12rem;
+	margin: 0;
+	background-color: #F2F2F2;
+	font-size: 1.1rem;
+}
+/*Variáveis do Fundo*/
+.fundo{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('imagens/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #191967;
+  background-attachment: fixed;
+}
+
+/*BOTÕES DO TOPO*/
+.topo{
+	font-family: ;
+}
+
+div.topo{
+	display: block;
+	background-color: #2B2947;
+	border-radius: 0px 0px 10px 10px;
+    transition: all 200ms ease-out;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+div.topo img{
+	/*Tamanho PERFEITO Para imagens de perfil, não necessário para o projeto*/
+	height: 50px;
+	width: auto;
+	float: left;
+	padding: 1rem
+}
+
+div.topo li.active a{
+	background-color: #31302E;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*BOTÕES EM SI*/
+
+div.topo li a{
+	float: left;
+}
+
+div.topo li a{
+  color: white;
+  text-align: center;
+  /*O primeiro é altura o segundo é largura*/
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+}
+
+div.topo h4{
+  /*O primeiro é altura o segundo é largura*/
+  padding: 0.2rem 0.1rem;
+  padding-bottom: 0.2rem;
+}
+
+div.topo li a:hover{  
+  background-color: #4862FC;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.topo li a#info:hover{  
+  background-color: #FF5733;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo{
+	display: flex;
+	min-width: 2rem;	
+	padding: 1rem 1rem;
+	background-color: white;
+	border-radius: 10px 10px 0px 0px;
+	word-spacing:-2px;
+	overflow: auto;	
+	display: block;
+}
+
+.galeria {
+ display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+	
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+.sidebar-1{	
+	width: 160px;
+}
+.conteudo img{
+	max-width: 200px; 
+}
+/* Lista dos profs */
+#lista{
+  /* Mudando estilo */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#pesquisa{
+  background-image: url('imagens/pesquisa.png');
+  background-size: 7%;
+  float:left;
+  background-repeat: no-repeat;
+  width: 30%;
+  float: right;
+  font-size: 16px;
+  padding: 10px 20px 10px 42px;
+  border: 1px solid #ddd;
+  border-radius: 5px 5px 5px 5px;
+}
+/*Containers, Estilo.*/
+.container{
+	border-radius: 5px;
+	padding-bottom: 2rem;
+	margin: 0.5rem;
+
+}
+
+.toproll{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.topcard{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	font-family: Calibri;
+	font-size: 2rem;
+	color: white;
+	background-color: #2B2947;
+	padding: 0.5rem 1rem;
+}
+
+ /*ColorS!!!*/
+ .orange{
+ 	color:  #FF5733;
+ }
+
+ .shadow{
+ 	border: 0.5px solid #A0A0AB;
+ 	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+ }
+
+/*Galeria dos professores e suas fotos.*/ 
+.galeria{
+	display: flex;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.galeria img{
+	width: 12rem;
+	border-radius: 5px;
+	transition: transform .2s;
+}
+
+.galeria img:hover{
+	cursor:pointer;
+	box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.1);
+	transform: scale(1.2);
+}
+
+footer{
+  background-color: white;
+  padding: 10px 20px 10px 40px;
+  text-align: left;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.1);
+  background-color: #2B2947;
+  color: white;
+}
+.editar{
+background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.editar button:hover{
+background-color: #45a049;
+}
+.image-upload>input{
+  display: none;
+}
+
+.inputprofs{
+	  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*Table Carrinho*/
+
+.firstrow{
+	display: flex;
+  width: 80%;
+}
+
+.tablewrap{
+  margin: 1rem;
+}
+
+
+/*Top Roll*/
+.rowitem{
+  width: 10%;
+  border: 0.5px solid white;
+  border-radius: 1.2rem 0 0 0;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+.rowitemimg{
+  width: 30%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+.rowitem1{
+  width: 40%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+.rowitem2{
+  width: 20%;
+  border: 0.5px solid white;
+  border-radius: 0 1.2rem 0 0;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+/*Carrinho*/
+
+.wrapt{
+  width: 100%;
+  text-align: center;
+  display: wrap;
+ 
+}
+
+.produtorow{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1rem;
+
+}
+
+/*Produtos tem o tamanho correspondente aos de cima.*/
+.in{
+  display: wrap;
+  width: 80%;
+  overflow:;
+}
+
+.in2{
+  padding-top: 1rem;
+  display: flex;
+  width: 20%;
+  overflow: hidden;
+  justify-content: center;
+  align-content: center;
+}
+
+.logid{
+  width: 10%;
+  text-align: center;
+
+}
+
+.logtipo{
+  width: 30%;
+  text-align: center;
+
+}
+
+.tempolog{
+  width: 40%;
+  text-align: center;
+
+}
+
+.fkusuario{
+  width: 20%;
+  text-align: center;
+
+}
+
+.inputnumbers{
+  width: 4rem;
+  height: 1.2rem;
+  border-radius: 2rem 0 0 2rem;
+}
+
+.inputsend{
+  width: 4rem;
+  height: 1.6rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.txt{
+  width: 20%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 1rem;
+  font-style: italic;
+  color: #787878;
+}
+
+/*Table 2*/
+
+.rowitema{
+  border-radius: 1rem 0 0 0;
+  width: 40%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+.rowitemb{
+  width: 20%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+}
+
+.rowitemc{
+  width: 20%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+} 
+
+.rowitemd{
+  width: 20%;
+  border: 0.5px solid white;
+  padding: 0.5rem;
+  overflow: hidden;
+  color: white;
+  background-color: #2B2947;
+  border-radius: 0 1rem 0 0;
+}
+
+.Item1{
+  width: 40%;
+}
+
+.Item2{
+  width: 20%;
+}
+
+.Item3{
+  width: 20%;
+}
+
+.Item4{
+  width: 20%;
+}
+.finalizar{
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 30px;
+  cursor: pointer;
+  background-color: #14A714;
+  border-radius: 4px;
+}
+button:hover{
+  background-color: #5AD15A;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li.s{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

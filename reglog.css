@@ -1,0 +1,150 @@
+*{
+	font-family: Arial;
+}
+
+p{
+	padding: 0rem 2rem;
+}
+
+body{
+	padding: 0rem 12rem;
+	margin: 0;
+	background-color: #F2F2F2;
+	font-size: 1.1rem;
+}
+/*Variáveis do Fundo*/
+.fundo{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('imagens/astolfo4k.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #191967;
+  background-attachment: fixed;
+}
+
+div.topo{
+	display: block;
+	background-color: #2B2947;
+	border-radius: 0px 0px 10px 10px;
+    transition: all 200ms ease-out;
+}
+
+ul.nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+div.topo img{
+	/*Tamanho PERFEITO Para imagens de perfil, não necessário para o projeto*/
+	width: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-radius: 25px;
+	align-content: center;
+	float: left;
+	padding: 1rem;
+  width:5%;
+  height: 5%;
+}
+
+div.topo li.active a{
+	background-color: #31302E;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+/*BOTÕES EM SI*/
+
+div.topo li a{
+	float: left;
+}
+
+div.topo li a{
+  color: white;
+  text-align: center;
+  /*O primeiro é altura o segundo é largura*/
+  padding: 0rem 1rem;
+  text-decoration: none;
+  border-radius: 0px 0px 10px 10px;
+  font-size: 20px;
+}
+
+div.topo h4{
+  /*O primeiro é altura o segundo é largura*/
+  padding: 0.2rem 2rem;
+  padding-bottom: 0.2rem;
+}
+
+div.topo li a:hover{  
+  background-color: #4862FC;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+div.topo li a#info:hover{  
+  background-color: #FF5733;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #E4E8E8;    
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  padding-top: 1.5rem;
+  padding-bottom: 7rem;
+}
+.reg{
+  padding-bottom: 2.5rem;
+}
+
+.container p{
+	padding-top: 1rem;
+}
+.opacity{
+  opacity: 0.0;
+}
+.container img{
+   width:15%;
+   height: auto;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container img:hover{
+   box-shadow: 1px 0 3px 1px rgba(0, 0, 5, 0.2);
+}
+input, select,input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /*box-sizing: border-box;*/
+}
+
+input[type=submit] {
+  width: 90%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.login {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 0.05rem;
+  width: 60%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
